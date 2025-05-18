@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Testing Room API</h1>
+        <script>
+            const api =async ()=>{
+                const responce = await fetch("http://127.0.0.1:8000/api/rooms/1")
+                const value =await responce.json()
+                console.log(value['description'])
+            }
+        </script>
+</body>
+</html>
